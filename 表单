@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function show_desc() {
+        var desc=document.getElementById("userid_desc");
+        desc.style.display="block"
+      }
+      function hide_desc() {
+        var desc=document.getElementById("userid_desc");
+        desc.style.display="none"
+      }
+
+    </script>
+  </head>
+  <body>
+
+    <form class="" action="index.html" method="post">
+      用户名： <input type="text" name="userid" value="" onfocus="show_desc()"
+      onblur="hide_desc()">  *
+      <span id="userid_desc" class="desc" style="display:nome;"><br>
+      1.不能大于16位 <br>
+
+    </span><br>
+ 	</rangelength>
+
+    <form>
+    用户名： <input pattern=".{4,16}">
+     <input type="submit" value="提交">最少4个，最多16个</input>
+
+    </form>
+
+  </body>
+</html>
