@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>自制</title>
+</head>
+<body>
+<center>
+   <script type="text/javascript">
+   	function processs_change(){
+   		console.log("onChange event start.");
+   		document.getElemenById("msg").innerHTML="这个用户已被占用"
+   	}
+   	function process_click(){
+   		console.log("onclick event start.");
+   	}
+   	function process_focus(){
+   		console.log(new Date());
+   		console.log("onfocus event start.有一个控件获得焦点。")
+
+   	}
+   	function process_blur(){
+   		console.log(new Date());
+   		console.log("onblur event start.有一个控件失去焦点。")
+   	}
+   </script>
+
+<form action="two.html" method="get">
+	男<input type="radio" name="tang1" value="stly"><br/>
+	女<input type="radio" name="tang1" value="bule"><br/>
+	用户名称<input type="text" name="tang2"><br/>
+	账号密码<input type="text" name="tang2"><br/>
+	性格类型<br/>
+	理智型<input type="checkbox" name="tang3"><br/>
+	情绪型<input type="checkbox" name="tang3"><br/>
+	意志型<input type="checkbox" name="tang3"><br/>
+	内向型<input type="checkbox" name="tang3"><br/>
+	外向型<input type="checkbox" name="tang3"><br/>
+	<input type="button" name="tang5" value="确认"><br/>
+    是否单身<br/>
+    <select name="category" multiple=""> 
+    <option value="是">是</option>
+    <option value="否">否</option>
+    <option value="php">php</option>
+    <option value="js">js</option>	
+    </select><br/>
+    <input type="submit" name="666">
+</form>
+</center>
+</body>
+</html>
